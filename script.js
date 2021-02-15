@@ -1,4 +1,4 @@
-// Declare blank variables to hold individual cell data
+// Declare blank variables
 var card, cardurl, cell, cells, date, from, million, row, time, to;
 
 // Declare results string variable and store static column header string
