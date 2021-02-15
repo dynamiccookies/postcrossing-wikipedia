@@ -21,6 +21,9 @@ Simple script to parse HTML table from [Postcrossing Community post](https://com
 
 7. You now have all of the results from the Postcrossing Community post's table fully formatted as a Wikipedia table that you can paste directly to a Wikipedia article
 
+## Note
+Please ***do not*** simply paste and replace the current Postcard Milestones table on the [Postcrossing Wikipedia page](https://en.wikipedia.org/wiki/Postcrossing#History). The code returned from this script does not include the manually added references in the Millions column on that page. 
+
 ## License
 
 This project uses the following license: [Unlicense](LICENSE)
