@@ -1,6 +1,7 @@
 var card, cardurl, cell, cells, date, from, million, row, time, to;
 var result = "{| class=\"wikitable sortable\"\n|-\n! Million !! Date !! Time (UTC) !! From !! To !! Postcard\n";
-var rows = document.getElementsByTagName("tr");
+var rows   = document.getElementsByTagName("tr");
+var today  = new Date().toLocaleDateString("en-us",{year:'numeric',month:'long',day:'numeric'})
 for (row = 0; row < rows.length; row++) { 
 	cells   = rows[row].getElementsByTagName("td");
 	million = cells[0].textContent;
@@ -12,6 +13,6 @@ for (row = 0; row < rows.length; row++) {
 	cardurl = card.href;
 	card    = card.text;
 	result += "|-\n| " + million + " || " + date + " || " + time + " || " + from + " || " + to + " || " + card + 
-          "<ref>{{cite web |url=" + cardurl + " |title=Postcard " + card + " |date=" + date + " |website=Postcrossing |access-date=January 28, 2021}}</ref>\n";
+          "<ref>{{cite web |url=" + cardurl + " |title=Postcard " + card + " |date=" + date + " |website=Postcrossing |access-date=" + today + "}}</ref>\n";
 }
 console.log(result);
