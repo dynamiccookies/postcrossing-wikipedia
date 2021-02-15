@@ -4,14 +4,17 @@ var card, cardurl, cell, cells, date, from, million, row, time, to;
 // Declare results string variable and store static column header string
 var result = "{| class=\"wikitable sortable\"\n|-\n! Million !! Date !! Time (UTC) !! From !! To !! Postcard\n";
 
+// Declare and set variable to hold post
+var post   = document.getElementById("post_5");
+
 // Declare and set variable to hold all rows in table
-var rows   = document.getElementsByTagName("tr");
+var rows   = post.getElementsByTagName("tr");
 
 // Declare and set variable with today's date
 var today  = new Date().toLocaleDateString("en-us",{year:'numeric',month:'long',day:'numeric'})
 
 // Loop to run through each row in table
-for (row = 0; row < rows.length; row++) { 
+for (row = 1; row < rows.length; row++) { 
 
 	// Populate cells variable with all cells from current row
 	cells   = rows[row].getElementsByTagName("td");
