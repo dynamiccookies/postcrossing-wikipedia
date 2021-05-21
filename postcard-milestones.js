@@ -2,7 +2,7 @@
 var card, cardurl, cell, cells, date, from, million, row, time, to;
 
 // Declare results string variable and store static column header string
-var result = "{| class=\"wikitable sortable\"\n|-\n! Million !! Date !! Time (UTC) !! From !! To !! Postcard\n";
+var result = "===Postcard Milestones<ref>{{cite web |url=https://community.postcrossing.com/t/postcrossing-wikipedia-page-need-help/55442/5 |title=Postcrossing Wikipedia Page - Need Help |date=January 28, 2021 |website=Postcrossing Community |last=Magalhães |first=Paulo |access-date=January 28, 2021}}</ref>===\n{| class=\"wikitable sortable\"\n|-\n! Million !! Date !! Time (UTC) !! From !! To !! Postcard\n";
 
 // Declare and set variable to hold post
 var post   = document.getElementById("post_5");
@@ -10,7 +10,7 @@ var post   = document.getElementById("post_5");
 // Declare and set variable to hold all rows in table
 var rows   = post.getElementsByTagName("tr");
 
-// Declare and set variable with today's date
+// Declare and set variable with today's date formatted as: January 1, 2021
 var today  = new Date().toLocaleDateString("en-us",{year:'numeric',month:'long',day:'numeric'})
 
 // Loop to run through each row in table
@@ -44,9 +44,12 @@ for (row = 1; row < rows.length; row++) {
 	card    = card.text;
 
 	// Append concatenated text and variables for current row's data to results variable
-	result += "|-\n| " + million + " || " + date + " || " + time + " || " + from + " || " + to + " || " + card + 
+	result += "|-\n| " + million + " || " + date + " || " + time + " || {{flag|" + from + "}} || {{flag|" + to + "}} || " + card + 
           "<ref>{{cite web |url=" + cardurl + " |title=Postcard " + card + " |date=" + date + " |website=Postcrossing |access-date=" + today + "}}</ref>\n";
 }
+
+// Close table markdown
+result += "|}";
 
 // Push results variable contents to console
 console.log(result);
