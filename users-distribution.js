@@ -88,10 +88,10 @@ for (rank = 0; rank < postcards.length; rank++) {
 	// For each record in the postcards array, get the country value and store it into the country variable
 	var country = postcards[rank].country;
 
-	// For each record in the postcards array, get the members value, format the number with commas, and store the value into the users variable
+	// For each record in the postcards array, get the postcards value, format the number with commas, and store the value into the cards variable
 	var cards = postcards[rank].postcards.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-	// Using the country and users variables, build the Wikipedia table markdown for the first table and add it to the results variable
+	// Using the country and cards variables, build the Wikipedia table markdown for the second table and add it to the results variable
 	results += '|-\n|' + (rank + 1) + '.||{{flag|' + country + '}}||' + cards + '\n';
 }
 
