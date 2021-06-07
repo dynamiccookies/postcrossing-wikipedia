@@ -1,6 +1,4 @@
 # postcrossing-wikipedia
-![GitHub](https://img.shields.io/github/license/dynamiccookies/postcrossing-wikipedia?style=for-the-badge)
-
 [users-distribution.js](users-distribution.js) | [postcard-milestones.js](postcrossing-milestones.js)
 --- | ---
 ![GitHub file size in bytes](https://img.shields.io/github/size/dynamiccookies/postcrossing-wikipedia/users-distribution.js?style=for-the-badge) | ![GitHub file size in bytes](https://img.shields.io/github/size/dynamiccookies/postcrossing-wikipedia/postcard-milestones.js?style=for-the-badge)
@@ -13,5 +11,4 @@ Please view the wiki pages for each script's step by step instructions:
  - [postcard-milestones.js](https://github.com/dynamiccookies/postcrossing-wikipedia/wiki/postcard-milestones.js)
 
 ## License
-
 This project uses the following license: [Unlicense](LICENSE)
