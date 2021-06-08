@@ -1,5 +1,5 @@
 # postcrossing-wikipedia
-[users-distribution.js](users-distribution.js) | [postcard-milestones.js](postcrossing-milestones.js)
+[users-distribution.js](users-distribution.js) | [postcard-milestones.js](postcard-milestones.js)
 --- | ---
 ![GitHub file size in bytes](https://img.shields.io/github/size/dynamiccookies/postcrossing-wikipedia/users-distribution.js?style=for-the-badge) | ![GitHub file size in bytes](https://img.shields.io/github/size/dynamiccookies/postcrossing-wikipedia/postcard-milestones.js?style=for-the-badge)
 
