@@ -33,8 +33,8 @@ for (row = 1; row < rows.length; row++) {
 	
 	// FIXING MISTAKES - Table has two mistakes fixed by these two lines
 	// Thank you Adrio for finding the mistakes in the table
-    if (row == 19) {from = 'Ukraine';}
-    if (row == 20) {from = 'U.S.A.';}
+	if (row == 19) {from = 'Ukraine';}
+	if (row == 20) {from = 'U.S.A.';}
 
 	// Set variable to value from fourth field
 	to      = cells[3].textContent;
